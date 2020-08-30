@@ -1,0 +1,27 @@
+html {
+}
+
+body {
+  min-width: 1200px;
+  background-color: #fff;
+}
+
+.common-container {
+  width: 1200px;
+  padding: 0px 15px;
+}
+
+.header {
+  display: flex;
+  width: 1600px;
+  height: 80px;
+  background-color: var(--header-background);
+  color: var(--title-dark);
+}
+
+.footer {
+  display: inline-flex;
+  width: 1600px;
+  height: 252px;
+  background-color: var(--footer-background);
+}

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/studio.css" />
+  </head>
+  <body>
+    <!-- верхній рядок з навігацією -->
+    <header class="header">
+      <div class="header-logo">
+        <!--LOGO компанії - посилання на головну сторінку -->
+        <a href="./index.html">
+          <!-- <img src="./images/icons/logo.svg" alt="логотип компании" height="31" width="130" /> -->
+          <span class="logo-A">Web</span>
+          <span class="logo-B">Studio</span>
+        </a>
+      </div>
+
+      <nav>
+        <!-- список посилань на інші розділи сайту -->
+        <ul>
+          <li>
+            <a href="./index.html">Студия</a>
+          </li>
+          <li>
+            <a href="./portfolio.html">Портфолио</a>
+          </li>
+          <li>
+            <a href="#Contacts">Контакты</a>
+          </li>
+        </ul>
+        <!-- посилання на mail-to і tel -->
+        <ul>
+          <li>
+            <a href="mailto:info@example.com">
+              <img src="./images/icons/envelope.svg" alt="конверт" />
+              <span>info@devstudio.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+380991111111">
+              <img src="./images/icons/smartphone.svg" alt="смартфон" />
+              <span>+38 096-111-11-11</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- блок-герой з головним заголовком(гаслом) та картинкою  -->
+    <div class="baner">
+      <div class="baner-overlay">
+        <h1>Эффективные решения для вашего бизнеса</h1>
+        <button class="button" type="button">
+          <span>
+            Заказать услугу
+          </span>
+        </button>
+      </div>
+    </div>
+    <!-- Основна змістовна частина з розділами "герой", "особливості", "діяльність" та інше -->
+    <main class="main">
+      <article>
+        <!-- блок "особливості" -->
+        <section class="features">
+          <ul>
+            <!-- Внимание к деталям -->
+            <li>
+              <div class="feature-image-underlay">
+                <img
+                  class="feature-img"
+                  src="./images/icons/antenna.svg"
+                  alt="антенна"
+                  width="70"
+                />
+              </div>
+              <h3>Внимание к деталям</h3>
+              <p>
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <!-- Пунктуальность -->
+            <li>
+              <div class="feature-image-underlay">
+                <img src="./images/icons/clock.svg" alt="часы" width="70" />
+              </div>
+              <h3>Пунктуальность</h3>
+              <p>
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <!-- Планирование -->
+            <li>
+              <div class="feature-image-underlay">
+                <img src="./images/icons/diagram.svg" alt="график" width="70" />
+              </div>
+              <h3>Планирование</h3>
+              <p>
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <!-- Современные технологии -->
+            <li>
+              <div class="feature-image-underlay">
+                <img
+                  src="./images/icons/astronaut.svg"
+                  alt="астронавт"
+                  width="70"
+                />
+              </div>
+              <h3>Современные технологии</h3>
+              <p>
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <!-- блок "чим ми займаємось"  -->
+        <section class="direction">
+          <h2>Чем мы занимаемся</h2>
+          <ul>
+            <li class="direction-block1">
+              <div>
+                <div class="direction-capion">
+                  <h3>Десктопные приложения</h3>
+                </div>
+              </div>
+            </li>
+            <li class="direction-block2">
+              <div>
+                <div class="direction-capion">
+                  <h3>Мобильные приложения</h3>
+                </div>
+              </div>
+            </li>
+            <li class="direction-block3">
+              <div>
+                <div class="direction-capion">
+                  <h3>Дизайнерские решения</h3>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- наша команда -->
+        <section class="staff">
+          <h2>Наша команда</h2>
+          <ul>
+            <!-- Игорь Демьяненко Product Designer -->
+            <li>
+              <div class="staff-item">
+                <img
+                  src="./images/team/PD.jpg"
+                  alt="Фотография Игоря Демьяненко"
+                  width="270"
+                />
+                <h3>
+                  Игорь Демьяненко
+                </h3>
+                <h4 lang="en">
+                  Product Designer
+                </h4>
+                <address>
+                  <a href="/">
+                    <img
+                      src="./images/icons/Instagram_gray.svg"
+                      alt="лого Инстаграм"
+                      height="44"
+                    />
+                  </a>
+                  <a href="/">
+                    <img
+                      src="./images/icons/Twitter_gray.svg"
+                      alt="дого Твиттер"
+                      height="44"
+                    />
+                  </a>
+                  <a href="/">
+                    <img
+                      src="./images/icons/Facebook_gray.svg"
+                      alt="лого Фейсбук"
+                      height="44"
+                    />
+                  </a>
+                  <a href="/">
+                    <img
+                      src="./images/icons/LinkedIn_gray.svg"
+                      alt="лого Линкед Ин"
+                      height="44"
+                    />
+                  </a>
+                </address>
+              </div>
+            </li>
+            <!-- Ольга Репина - Frontend Developer  -->
+            <li>
+              <div class="staff-item">
+                <img
+                  src="./images/team/FD.jpg"
+                  alt="Фотография Ольги Репиной"
+                  width="270"
+                />
+                <h3>
+                  Ольга Репина
+                </h3>
+                <h4 lang="en">
+                  Frontend Developer
+                </h4>
+                <address>
+                  <a href="/">
+                    <img
+                      src="./images/icons/Instagram_gray.svg"
+                      alt="лого Инстаграм"
+                      height="44"
+                    />
+                  </a>
+                  <a href="/">
+                    <img
+                      src="./images/icons/Twitter_gray.svg"
+                      alt="дого Твиттер"
+                      height="44"
+                    />
+                  </a>
+                  <a href="/">
+                    <img
+                      src="./images/icons/Facebook_gray.svg"
+                      alt="лого Фейсбук"
+                      height="44"
+                    />
+                  </a>
+                  <a href="/">
+                    <img
+                      src="./images/icons/LinkedIn_gray.svg"
+                      alt="лого Линкед Ин"
+                      height="44"
+                    />
+                  </a>
+                </address>
+              </div>
+            </li>
+            <!-- Николай Тарасов - Marketing -->
+            <li>
+              <div class="staff-item">
+                <img
+                  src="./images/team/M.jpg"
+                  alt="Фотография Николая Тарасова"
+                  width="270"
+                />
+                <h3>
+                  Николай Тарасов
+                </h3>
+                <h4 lang="en">
+                  Marketing
+                </h4>
+                <address>
+                  <a href="/">
+                    <img
+                      src="./images/icons/Instagram_gray.svg"
+                      alt="лого Инстаграм"
+                      height="44"
+                    />
+                  </a>
+                  <a href="/">
+                    <img
+                      src="./images/icons/Twitter_gray.svg"
+                      alt="дого Твиттер"
+                      height="44"
+                    />
+                  </a>
+                  <a href="/">
+                    <img
+                      src="./images/icons/Facebook_gray.svg"
+                      alt="лого Фейсбук"
+                      height="44"
+                    />
+                  </a>
+                  <a href="/">
+                    <img
+                      src="./images/icons/LinkedIn_gray.svg"
+                      alt="лого Линкед Ин"
+                      height="44"
+                    />
+                  </a>
+                </address>
+              </div>
+            </li>
+            <!-- Михаил Ермаков - UI Designer-->
+            <li>
+              <div class="staff-item">
+                <img
+                  src="./images/team/UID.jpg"
+                  alt="Фотография Михаила Ермакова"
+                  width="270"
+                />
+                <h3>
+                  Михаил Ермаков
+                </h3>
+                <h4 lang="en">
+                  UI Designer
+                </h4>
+                <address>
+                  <a href="/">
+                    <img
+                      src="./images/icons/Instagram_gray.svg"
+                      alt="лого Инстаграм"
+                      height="44"
+                    />
+                  </a>
+                  <a href="/">
+                    <img
+                      src="./images/icons/Twitter_gray.svg"
+                      alt="дого Твиттер"
+                      height="44"
+                    />
+                  </a>
+                  <a href="/">
+                    <img
+                      src="./images/icons/Facebook_gray.svg"
+                      alt="лого Фейсбук"
+                      height="44"
+                    />
+                  </a>
+                  <a href="/">
+                    <img
+                      src="./images/icons/LinkedIn_gray.svg"
+                      alt="лого Линкед Ин"
+                      height="44"
+                    />
+                  </a>
+                </address>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- постійні клієнти -->
+        <section class="clients">
+          <h2>Постоянные клиенты</h2>
+          <ul>
+            <li>
+              <div class="clients-item">
+                <a href="./index.html">
+                  <img
+                    src="./images/icons/logo_client1.svg"
+                    alt="Logo YA & CO"
+                  />
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="clients-item">
+                <a href="./index.html">
+                  <img
+                    src="./images/icons/logo_client2.svg"
+                    alt="Logo Company tagline here"
+                  />
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="clients-item">
+                <a href="./index.html">
+                  <img
+                    src="./images/icons/logo_client3.svg"
+                    alt="Logo Company"
+                  />
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="clients-item">
+                <a href="./index.html">
+                  <img
+                    src="./images/icons/logo_client4.svg"
+                    alt="Logo Foster Peters"
+                  />
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="clients-item">
+                <a href="./index.html">
+                  <img src="./images/icons/logo_client5.svg" alt="Logo Brand" />
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="clients-item">
+                <a href="./index.html">
+                  <img
+                    src="./images/icons/logo_client6.svg"
+                    alt="Logo Company tagline"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <!-- +++ Footer +++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <footer class="footer">
+      <div class="footer-block1">
+        <div class="footer-logo">
+          <!--LOGO компанії - посилання на головну сторінку -->
+          <a class="logo" href="./index.html">
+            <!-- <img src="./images/icons/logo.svg" alt="логотип компании" height="31" width="130" /> -->
+            <span class="logo-A">Web</span>
+            <span class="logo-W">Studio</span>
+          </a>
+        </div>
+        <!-- Контакти -->
+        <address id="Contacts">
+          <ul>
+            <li>
+              <a href="https://goo.gl/maps/ZKpjapQN79g1RSdU6" target="_blank">
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@example.com"> info@example.com </a>
+            </li>
+            <li>
+              <a href="tel:+380991111111"> +38-099-111-11-11 </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+
+      <!-- Приєднуйтесь у соц. мережах -->
+      <div class="footer-social">
+        <h3 class="footer-h3">Присоединяйтесь</h3>
+        <ul>
+          <li>
+            <a href="/">
+              <img
+                src="./images/icons/instagram.svg"
+                alt="Instagram logo"
+                height="44"
+                width="44"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="./images/icons/twitter.svg"
+                alt="Twitter logo"
+                height="44"
+                width="44"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="./images/icons/facebook.svg"
+                alt="Facebook logo"
+                height="44"
+                width="44"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="./images/icons/linkedin.svg"
+                alt="LinkedIn logo"
+                height="44"
+                width="44"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- підписатись на розсилку -->
+      <div class="footer-subscribe">
+        <h3 class="footer-h3">Подпишитесь на рассылку</h3>
+        <div class="footer-subscribe-container">
+          <input class="footer-mail-input" type="email" name="btn2" id="2" />
+          <button class="button" type="button">
+            <span>
+              Подписаться
+            </span>
+            <img src="./images/icons/icon_send.svg" alt="Отправить" />
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

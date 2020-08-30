@@ -1,0 +1,649 @@
+/* Define variables for the colors */
+:root {
+  --active-blue: #2196f3;
+  --title-white: #ffffff;
+  --title-dark: #212121;
+  --text-grey: #757575;
+  --text-transparent: rgba(255, 255, 255, 0.6);
+
+  --header-background: #ffffff;
+  --baner-background: #c4c4c4;
+  --baner-overlay: rgba(47, 48, 58, 0.4);
+  --direction-background: rgba(47, 48, 58, 0.8);
+  --body-background: #e5e5e5;
+  --main-background: #ffffff;
+  --background-grey: #f5f4fa;
+  --footer-background: #2f303a;
+
+  --modal-background: rgba(0, 0, 0, 0.2);
+  --button-background: var(--active-blue);
+  --button-hover: #188ce8;
+
+  --box-shadow-1: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --staff-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --modal-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* fonts to use */
+/* for LOGO */
+
+body {
+  box-sizing: border-box;
+  width: 1600px;
+  font-family: "Roboto";
+  text-decoration: none;
+  color: var(--title-dark);
+  background-color: var(--body-background);
+}
+body h2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  height: 42px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-dark);
+}
+body h3 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-dark);
+}
+/* Logo decoration */
+
+.logo-W,
+.logo-W:visited {
+  margin: 0px;
+  padding: 0px;
+  color: var(--title-white);
+}
+.logo-B,
+.logo-B:visited {
+  color: var(--title-dark);
+}
+.logo-A,
+.logo-A:visited {
+  color: var(--active-blue);
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Header decoration */
+
+.header-logo {
+  box-sizing: border-box;
+  width: 145px;
+  height: 80px;
+  margin-left: 215px;
+  margin-right: 93px;
+  padding-top: 24px;
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+}
+.header nav {
+  box-sizing: border-box;
+  display: flex;
+}
+.header ul {
+  height: 16px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 215px;
+  padding: 0px;
+}
+.header li {
+  /* list without markers */
+  display: inline-block;
+  margin-right: 32px;
+  list-style-type: none;
+}
+.header a,
+.header a:visited {
+  color: var(--title-dark);
+}
+.header a:hover,
+.header a:focus,
+.header a:active {
+  color: var(--active-blue);
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* main part decoration */
+.main {
+  box-sizing: border-box;
+  width: 1600px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--main-background);
+}
+/* секція "банер" */
+.baner {
+  width: 1600px;
+  height: 600px;
+
+  background-image: url("../images/other/baner.jpg");
+  /* background-color: var(--baner-background); */
+}
+.baner h1 {
+  box-sizing: border-box;
+  width: 696px;
+  height: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 200px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--title-white);
+}
+.baner-overlay {
+  /* display: ; */
+
+  height: 100%;
+  background-color: var(--baner-overlay);
+  justify-content: center;
+}
+.baner button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+/* секція "особливості" */
+.features {
+  box-sizing: border-box;
+  width: 1170px;
+  height: 251px;
+  margin-left: 215px;
+  margin-right: 215px;
+  /* margin-top: 94px; */
+  padding: 0px;
+
+  /* background-color: yellow; */
+}
+.features ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+.features li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+
+  background-color: white;
+}
+.features h3 {
+  width: 270px;
+  height: 16px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-dark);
+}
+
+.features p {
+  width: 270px;
+  height: 75px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--text-grey);
+}
+.feature-image-underlay {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding-top: 25px;
+
+  background-color: var(--background-grey);
+}
+.feature-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* секція "напрями діяльності" */
+.direction {
+  box-sizing: border-box;
+  width: 1170px;
+  height: 386px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 94px;
+  /* padding-top: 94px; */
+  text-align: center;
+}
+.direction h2 {
+  width: 1170px;
+  height: 42px;
+  /* margin-top: 94px; */
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-dark);
+}
+.direction h3 {
+  margin-left: auto;
+  margin-right: auto;
+  /* text-align: center; */
+  color: var(--title-white);
+}
+.direction-block1 {
+  box-sizing: border-box;
+  width: 370px;
+  height: 294px;
+  padding-top: 224px;
+  background-image: url("../images/other/desctopApps.png");
+  /* text-align: center; */
+}
+.direction-block2 {
+  box-sizing: border-box;
+  width: 370px;
+  height: 294px;
+  /* margin-left: 30px; */
+  /* margin-right: 30px; */
+  padding-top: 224px;
+  background-image: url("../images/other/mobileApps.png");
+}
+.direction-block3 {
+  box-sizing: border-box;
+  width: 370px;
+  height: 294px;
+  padding-top: 224px;
+  background-image: url("../images/other/designSolutions.png");
+}
+.direction ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+.direction li {
+  display: block;
+  list-style-type: none;
+}
+.direction-capion {
+  box-sizing: border-box;
+  width: 370px;
+  height: 70px;
+  padding-top: 27px;
+  background-color: var(--direction-background);
+}
+
+/* секція "наша команда" */
+.staff {
+  box-sizing: border-box;
+  margin-top: 94px;
+  padding-top: 94px;
+  width: 1600px;
+  height: 708px;
+  justify-content: center;
+  background-color: var(--background-grey);
+}
+.staff-item {
+  box-sizing: border-box;
+  width: 270px;
+  height: 428px;
+  padding: 0px;
+  text-align: center;
+
+  background-color: var(--main-background);
+}
+.staff ul {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: 368px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+
+.staff li {
+  list-style-type: none;
+  display: inline-block;
+}
+.staff h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-dark);
+}
+.staff h4 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--text-grey);
+}
+
+.clients {
+  box-sizing: border-box;
+  width: 1170px;
+  height: 182px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 94px;
+
+  /* padding-top: 94px; */
+}
+.clients img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients ul {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.clients li {
+  box-sizing: border-box;
+  width: 170px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  list-style-type: none;
+  display: inline-block;
+}
+.clients-item {
+  box-sizing: border-box;
+}
+.client a,
+.client a:visited {
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Footer decoration */
+
+.footer-block1 {
+  box-sizing: border-box;
+  width: 235px;
+  height: 252px;
+  margin-left: 215px;
+  margin-right: 70px;
+  padding-top: 60px;
+}
+
+.footer-logo {
+  box-sizing: border-box;
+  width: 145px;
+  height: 31px;
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+}
+.footer-contacts {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--text-transparent);
+  /* color: rgba(255, 255, 255, 0.6); */
+}
+.footer ul {
+  padding: 0px;
+}
+
+.footer li {
+  /* list without markers */
+  list-style-type: none;
+}
+.footer a,
+.footer a:visited {
+  color: var(--text-transparent);
+}
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
+  color: var(--active-blue);
+}
+
+.footer-h3 {
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-white);
+}
+.footer-social {
+  box-sizing: border-box;
+  width: 235px;
+  height: 252px;
+  margin-left: 70px;
+  margin-right: 93px;
+  padding-top: 72px;
+}
+.footer-social ul {
+  display: inline-block;
+}
+.footer-social li {
+  display: inline-block;
+}
+.footer-subscribe {
+  box-sizing: border-box;
+  width: 570px;
+  height: 252px;
+  margin-left: 93px;
+  margin-right: auto;
+  padding-top: 72px;
+}
+.footer-subscribe-container {
+  display: inline-flex;
+}
+.footer-mail-input {
+  box-sizing: border-box;
+  height: 50px;
+  margin-right: 12px;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  background-color: var(--active-blue);
+}
+.button span {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--title-white);
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-projects {
+  box-sizing: border-box;
+  width: 1170px;
+  height: 1360px;
+  margin-left: 215px;
+  margin-right: 215px;
+  /* margin-top: 94px; */
+  padding: 0px;
+  /* padding-top: 94px; */
+  /* padding-bottom: 94px; */
+}
+.portfolio-projects span {
+  height: 30px;
+  margin-left: 24px;
+  margin-right: 24px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--text-grey);
+}
+.portfolio-filters {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 611px;
+  height: 54px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 34px;
+  padding: 0px;
+  padding-bottom: 16px;
+
+  /* background-color: yellow; */
+}
+button.portfolio-filter-item {
+  background: var(--background-grey);
+  border-radius: 4px;
+  padding-left: 22px;
+  padding-right: 22px;
+  box-shadow: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-dark);
+}
+button.portfolio-filter-item:hover,
+button.portfolio-filter-item:focus,
+button.portfolio-filter-item:active {
+  background-color: var(--active-blue);
+  color: var(--title-white);
+}
+.portfolio-projects ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+.portfolio-projects li {
+  padding: 0px;
+  list-style-type: none;
+}
+.portfolio-projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  box-sizing: border-box;
+  width: 1170px;
+  height: 1272px;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+.portfolio-item {
+  width: 370px;
+  height: 404px;
+  margin: 0px;
+
+  background: var(--main-background);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+.portfolio-projects h3 {
+  height: 36px;
+  margin-left: 24px;
+  margin-right: 24px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+  text-transform: none;
+
+  color: var(--title-dark);
+}

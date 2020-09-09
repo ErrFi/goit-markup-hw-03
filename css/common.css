@@ -203,7 +203,8 @@
   /* flex-wrap: wrap; */
   margin: auto 0px;
   padding: 0px;
-  padding-bottom: 24px;
+  padding-bottom: 32px;
+  padding-top: 8px;
   /* outline: 1px solid blue; */
 
   justify-content: center;
@@ -229,10 +230,12 @@
   display: flex;
   /* position: relative; */
   width: auto;
-  height: 38px;
+  /* height: 38px; */
   margin: auto;
-  padding: 8px 0px;
+  padding: 0px;
   background: transparent;
+  /* align-content: center; */
+  align-items: center;
   border-radius: 4px;
   color: var(--text-grey);
   fill: var(--text-grey);
@@ -241,20 +244,19 @@
 .header .contacts-item .icon {
   width: 16px;
   height: 16px;
-  margin: auto 0px;
+  /* margin: auto 0px; */
   margin-right: 10px;
   text-align: center;
   /* fill: var(--text-grey); */
 }
 .header .contacts-item .text {
+  /* display: inline; */
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  /* line-height: 26px; */
   /* identical to box height, or 162% */
-
-  text-align: center;
   letter-spacing: 0.03em;
 
   /* color: inherit; */
